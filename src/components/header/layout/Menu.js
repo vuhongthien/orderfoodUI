@@ -13,7 +13,7 @@ function Menu() {
 
     useEffect(() => {
         const getDishType = async () => {
-            const res = await axios.get(`http://localhost:8080/api/list-dish-type`)
+            const res = await axios.get(`https://foodtestdeploy-production.up.railway.app/api/list-dish-type`)
             setDishTypes(res.data)
             console.log('loại món: ', res.data);
         }

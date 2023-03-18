@@ -6,7 +6,7 @@ function Bill() {
     const [bill, setBills] = useState([])
     useEffect(() => {
         const getBill = async () => {
-            const res = await axios.get(`http://localhost:8080/api/list-bill`)
+            const res = await axios.get(`https://foodtestdeploy-production.up.railway.app/api/list-bill`)
             setBills(res.data)
             console.log('bill ', res.data);
         }
