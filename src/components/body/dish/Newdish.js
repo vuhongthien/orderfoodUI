@@ -7,7 +7,7 @@ function Newdish() {
 
     useEffect(() => {
         const getDish = async () => {
-            const res = await axios.get(`https://foodtestdeploy-production.up.railway.app/api/list-dish/1/10`)
+            const res = await axios.get(`https://foodtestdeploy-production.up.railway.app/api/list-dish/1/5`)
             setDish(res.data)
             console.log(' món: ', res.data);
         }
