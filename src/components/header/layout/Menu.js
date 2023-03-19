@@ -37,7 +37,6 @@ function Menu() {
                             <NavLink className=' me-4 text-decoration-none text-dark' to="/gioi-thieu" exact >Giới thiệu</NavLink>
                             <NavLink className=' me-4 text-decoration-none text-dark' to="/chi-nhanh" exact >Chi nhánh</NavLink>
                             <NavLink className=' me-4 text-decoration-none text-dark' to="/hom-thu" exact >Hòm thư</NavLink>
-
                             
                         </div>
 

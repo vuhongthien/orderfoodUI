@@ -3,7 +3,7 @@ import img from '../../assets/logo.png'
 import { NavLink } from 'react-router-dom'
 function MenuBody() {
     return (
-        <div className='container' style={{ textAlign: "center" }}>            
+        <div className='container' style={{ textAlign: "center" }}>
             <div className=' row mt-2'>
                 <div className='col align-self-center'>
 
