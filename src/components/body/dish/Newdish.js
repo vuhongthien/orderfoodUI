@@ -1,5 +1,7 @@
 import React from 'react'
 import imgdish from '../../../assets/imgdish.jpg'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
 function Newdish() {
     const [dish, setDish] = useState([])
 
