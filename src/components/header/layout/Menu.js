@@ -33,7 +33,7 @@ function Menu() {
                         <NavLink className=' me-4 text-decoration-none text-dark' to="/" exact >Trang chủ</NavLink>
                             {
                                 dishtypes.map(dishtype => (
-                                    <NavLink className='me-4 text-decoration-none' href="#loaisanpham" key={dishtype.typeDishId}>{dishtype.typeDishName}</NavLink>
+                                    <NavLink className='me-4 text-decoration-none' href={`/${dishtype.typeDishId}`}>{dishtype.typeDishName}</NavLink>
                                 ))                                
                             }
                            
