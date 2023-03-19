@@ -7,10 +7,6 @@ import { NavLink} from 'react-router-dom'
 function Menu() {
     const [dishtypes, setDishTypes] = useState([])
 
-
-
-
-
     useEffect(() => {
         const getDishType = async () => {
             const res = await axios.get(`https://foodtestdeploy-production.up.railway.app/api/list-dish-type`)
@@ -33,7 +29,7 @@ function Menu() {
                         <NavLink className=' me-4 text-decoration-none text-dark' to="/" exact >Trang chủ</NavLink>
                             {
                                 dishtypes.map(dishtype => (
-                                    <NavLink className='me-4 text-decoration-none' href={`/${dishtype.typeDishId}`}>{dishtype.typeDishName}</NavLink>
+                                    <NavLink className='me-4 text-decoration-none' to={`/${dishtype.typeDishId}`}>{dishtype.typeDishName}</NavLink>
                                 ))                                
                             }
                            
